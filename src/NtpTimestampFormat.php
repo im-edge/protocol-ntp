@@ -24,7 +24,7 @@ class NtpTimestampFormat
     {
         $parts = explode(' ', $microtime, 2);
         return new NtpTimestampFormat(
-            (int) ((int) $parts[1] + self::SECONDS_FROM_1900_TO_EPOCH),
+            (int) $parts[1] + self::SECONDS_FROM_1900_TO_EPOCH,
             Util::microSecondsToFraction((int) substr($parts[0], 2, 6))
         );
     }
