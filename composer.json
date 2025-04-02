@@ -24,7 +24,7 @@
     },
     "require": {
         "php": ">=8.1",
-        "amphp/socket": "^2.3"
+        "imedge/amphp-socket": "^2.3.1"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",
